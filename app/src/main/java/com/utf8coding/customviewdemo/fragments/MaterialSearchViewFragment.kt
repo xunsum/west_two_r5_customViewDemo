@@ -40,8 +40,8 @@ class MaterialSearchViewFragment : Fragment() {
         }
         mdSearchBar?.setOnSearchListener(object: MaterialSearchView.OnSearchListener{
             override fun onKeyboardSearch(searchText: String) {
-                Log.i("MaterialSearchViewFragment:", "onSearch. SearchContent: ${searchText}")
-                Toast.makeText(MyApplication.context, "onKeyBoardSearch. SearchContent: ${searchText}", Toast.LENGTH_SHORT).show()
+                Log.i("MaterialSearchViewFragment:", "onSearch. SearchContent: $searchText")
+                Toast.makeText(MyApplication.context, "onKeyBoardSearch. SearchContent: $searchText", Toast.LENGTH_SHORT).show()
                 if (searchText != ""){
                     if(searchText == "114514"){
                         Log.i("MaterialSearchViewFragment:", "suggesting homo content.")

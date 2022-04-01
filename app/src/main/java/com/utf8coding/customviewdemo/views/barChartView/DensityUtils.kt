@@ -2,7 +2,6 @@ package com.utf8coding.customviewdemo.views.barChartView
 
 import android.content.Context
 import android.util.TypedValue
-import java.lang.UnsupportedOperationException
 
 //网上找来改的，这个类在绘制的时候感觉可以减少失误导致的 BUG
 object DensityUtils  {
@@ -32,7 +31,7 @@ object DensityUtils  {
     fun dps2pxs(context:Context, array: ArrayList<Float>): ArrayList<Float>{
         val tempArray = ArrayList<Float>()
         for (f in array){
-            tempArray.add(DensityUtils.dp2px(context, f).toFloat())
+            tempArray.add(dp2px(context, f))
         }
         return tempArray
     }

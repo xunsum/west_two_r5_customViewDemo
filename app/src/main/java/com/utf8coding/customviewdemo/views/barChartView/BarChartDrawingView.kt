@@ -39,7 +39,7 @@ class BarChartDrawingView(context: Context, attrs: AttributeSet): View(context, 
     }
     //坐标轴的线粗
     var lineWidthInDp = 5f
-        set(dp: Float) {
+        set(dp) {
             field = dp
             invalidate()
         }

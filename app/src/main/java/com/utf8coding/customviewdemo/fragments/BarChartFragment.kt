@@ -63,6 +63,10 @@ class BarChartFragment : Fragment() {
                 activity?.runOnUiThread {
                     barChartView.barWidth = 60f
                 }
+                sleep(500)
+                activity?.runOnUiThread {
+                    barChartView.isShowCoordinate = false
+                }
             }
         }
 
@@ -80,6 +84,7 @@ class BarChartFragment : Fragment() {
                         BarChartView.BarData(8f, Color.parseColor("#fbbc05")),
                         BarChartView.BarData(19f, Color.parseColor("#ea4335"))
                     )
+                    barChartView.isShowCoordinate = true
                 }
             }
         }

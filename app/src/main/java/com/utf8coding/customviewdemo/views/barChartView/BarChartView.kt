@@ -10,7 +10,6 @@ import android.widget.TextView
 import androidx.annotation.ColorInt
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.utf8coding.customviewdemo.R
-import org.w3c.dom.Text
 
 
 class BarChartView(context: Context, attrs: AttributeSet): ConstraintLayout(context, attrs) {

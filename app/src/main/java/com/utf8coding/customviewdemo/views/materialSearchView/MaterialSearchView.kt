@@ -1,7 +1,6 @@
 package com.utf8coding.customviewdemo.views.materialSearchView
 
 import android.animation.Animator
-import android.animation.AnimatorListenerAdapter
 import android.content.Context
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -116,7 +115,7 @@ class MaterialSearchView (context: Context, attrs: AttributeSet) : ConstraintLay
     }
 
     //生命周期：保存标题、不然会消失
-    override fun onSaveInstanceState(): Parcelable? {
+    override fun onSaveInstanceState(): Parcelable {
         super.onSaveInstanceState()
         val bundle = Bundle()
         bundle.putParcelable("instance", super.onSaveInstanceState())
