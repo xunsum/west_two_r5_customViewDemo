@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">customViewDemo</string>
+    <string name="materialSearchView">material search view</string>
+    <string name="qZoneView">qzone view</string>
+    <string name="barChartView">bar chart view</string>
+    <string name="search_hint">搜索</string>
+    <string name="搜索">搜索</string>
+    <string name="进入搜索">进入搜索</string>
+</resources>
